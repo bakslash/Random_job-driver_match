@@ -59,6 +59,45 @@ for id in range(1,50):
 		list = dict(zip(id_list, location_list))
 		print list
 		# This list cotains all the drivers and locations closest to each other
+# a thousand iterations
+for i in range(1000):
+	for id in range(1,50):
+		id_list = []
+		id_list.append(id)
+		# print id_list
+		j_location = randint(1,100)
+		location_list = []
+		location_list.append(j_location)
+		# print location_list
+
+		list = dict(zip(id_list, location_list))
+		# print list
+		for key in list:
+			driver_list = []
+			driver_list.append(key)
+			print len(list)
+			# This should contain the total number of drivers at their locations after 1000 iterations
+
+
+# two hundred iterations
+for i in range(200):
+	for id in range(1,50):
+		id_list = []
+		id_list.append(id)
+		# print id_list
+
+		j_location = randint(1,100)
+		location_list = []
+		location_list.append(j_location)
+		# print location_list
+
+		list = dict(zip(id_list, location_list))
+		# print list
+		for key in list:
+			driver_list = []
+			driver_list.append(key)
+			print len(list)
+			# This should contain the total number of drivers at their locations after 1000 iterations
 
 
 
